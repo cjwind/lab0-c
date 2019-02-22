@@ -207,7 +207,7 @@ void q_reverse(queue_t *q)
     list_ele_t *s = NULL, *t = NULL, *r = NULL;
 
     t = q->head;
-    s = (q->head != NULL) ? q->head->next : NULL;
+    s = q->head->next;
 
     while (t) {
         t->next = r;
